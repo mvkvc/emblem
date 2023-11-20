@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "emblem"
+version = "0.1.0"
+description = ""
+authors = ["Marko Vukovic <mail@mvk.vc>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+numpy = "^1.26.1"
+matplotlib = "^3.8.0"
+pydantic = "^2.4.2"
+nltk = "^3.8.1"
+textract = "^1.6.5"
+torch = "^2.1.0"
+tokenizers = "^0.14.1"
+transformers = "^4.34.1"
+sentence-transformers = "^2.2.2"
+openai = "^0.28.1"
+annoy = "^1.17.3"
+cohere = "^4.31"
+boto3 = "^1.28.68"
+fastapi = "^0.104.0"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+pandas = "^2.1.2"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^4.0.7"
+jupyterlab-theme-solarized-dark = "^3.0.0"
+jupyter-resource-usage = "^1.0.1"
+jupytext = "^1.15.2"
+nbdev = "^2.3.13"
+nbqa = "^1.7.0"
+black = "^23.10.0"
+isort = "^5.12.0"
+mypy = "^1.6.1"
+twine = "^4.0.2"
+bump-my-version = "^0.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+src_paths = ["src"]
+sections = "FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+force_alphabetical_sort_within_sections = "True"
+force_single_line = "True"
+dedup_headings = "True"
+
+[tool.jupytext.formats]
+"nbs/" = "ipynb"
+"nbs_py/" = "py:percent"
+
+[tool.mypy]
+warn_return_any = true
+warn_unused_configs = true
+
+[[tool.mypy.overrides]]
+module = []
+ignore_missing_imports = true

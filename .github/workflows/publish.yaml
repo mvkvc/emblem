@@ -1,0 +1,23 @@
+# name: publish
+
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches:
+#       - main
+
+# env:
+#   PYTHON_VERSION: "3.10"
+
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - run: pipx install poetry
+#       - uses: actions/setup-python@v4
+#         with:
+#           python-version: ${{ env.PYTHON_VERSION }}
+#           cache: 'poetry'
+#       - run: poetry install --with=dev
+#       - run: sh/publish.sh

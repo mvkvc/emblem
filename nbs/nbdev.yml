@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "emblem"
+  site-url: "https://mvkvc.github.io/emblem"
+  description: ""
+  repo-branch: main
+  repo-url: "https://github.com/mvkvc/emblem"

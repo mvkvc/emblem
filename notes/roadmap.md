@@ -1,0 +1,27 @@
+# roadmap
+
+- [ ] API wrappers
+  - [x] OpenAI
+  - [x] Cohere
+  - [x] AWS
+  - [ ] Async clients
+  - [ ] Rate limiter
+- [ ] OS models
+  - [ ] SentenceTransformers
+- [ ] Datasets
+  - [x] Document processing
+  - [x] Chunking
+- [ ] Evaluation framework
+  - [ ] MTEB
+  - [ ] TREC
+  - [ ] LLM
+    - [x] Question generation
+    - [ ] RAG eval
+  - [ ] Labelled datasets
+    - [ ] Interface
+    - [ ] Eval
+- [ ] Black box adapter
+- [ ] Fine-tuning
+  - [ ] Unsupervised
+  - [ ] Supervised
+- [ ] Inference
